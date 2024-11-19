@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Mobiliario - Gobierno de Oaxaca</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="vista/styles.css">
+
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm border-bottom">
+        <div class="container">
+                <div class="d-flex justify-content-center align-items-center">
+                    <!-- Logo -->
+                    <img src="https://seeklogo.com/images/O/oaxaca-gobierno-del-estado-logo-D127C58E05-seeklogo.com.png" 
+                         alt="Logo Oaxaca" width="80" class="me-3">
+                    
+                    <!-- Títulos -->
+                    <div>
+                        <h1 class="header-title">GOBIERNO DEL ESTADO DE OAXACA</h1>
+                        <p class="header-subtitle">CONTROL DE MOBILIARIO</p>
+                    </div>
+                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=dependencias">Dependencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=empleados">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=mostrarMobiliarioAsignado">Mobiliario</a> <!-- Enlace para acceder a la vista de mobiliario -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="index.php?action=login">Iniciar Sesión</a> <!-- Enlace para iniciar sesión -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Banner -->
+    <header class="bg-light text-center p-4">
+        <img src="https://seeklogo.com/images/O/oaxaca-gobierno-del-estado-logo-D127C58E05-seeklogo.com.png" alt="Logo Oaxaca" width="80">
+        <h1 class="mt-2">Control de Mobiliario y Empleados</h1>
+        <p>Gobierno del Estado de Oaxaca</p>
+    </header>
+     <!-- Carrusel Principal -->
+     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://pbs.twimg.com/media/FpNu9PhaEAIiTLI.jpg:large" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2023/12/banner-juridico.png" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://asimetrias.com.mx/wp-content/uploads/2024/08/IMG-20240812-WA0082.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.oaxaca.gob.mx/comunicacion/wp-content/uploads/sites/28/2023/10/WhatsApp-Image-2023-10-17-at-5.04.35-PM-1024x683.jpeg" class="d-block w-100" alt="Imagen 4">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.oaxaca.gob.mx/comunicacion/wp-content/uploads/sites/28/2021/10/Personal-con-mas-de-20-anos-de-servicio-4.jpg" class="d-block w-100" alt="Imagen 5">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.oaxaca.gob.mx/ieepo/wp-content/uploads/sites/75/2024/02/02-02-24-c.jpg" class="d-block w-100" alt="Imagen 6">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    
+
+    <!-- Sección Central con Fondo -->
+    <section class="central-bg">
+        <div class="container my-5">
+            <div class="row text-center">
+                <!-- Portal de Dependencias -->
+                <div class="col-md-4 mb-4">
+                    <!-- Envolvemos toda la tarjeta dentro del enlace -->
+                    <a href="index.php?action=dependencias" class="text-decoration-none">
+                        <div class="card shadow-sm border-0">
+                            <div id="carouselDependencias" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://pbs.twimg.com/media/FpNu9PhaEAIiTLI.jpg:large" class="d-block w-100" alt="Dependencias 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.oaxaca.gob.mx/trabajo/wp-content/uploads/sites/93/2023/12/banner-juridico.png" class="d-block w-100" alt="Dependencias 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://asimetrias.com.mx/wp-content/uploads/2024/08/IMG-20240812-WA0082.jpg" class="d-block w-100" alt="Dependencias 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDependencias" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselDependencias" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kXmWIAyGqQqJQJvNmwHQfgE93T2k4qBsig&s" class="my-3" style="width: 60px;" alt="Icono Dependencias">
+                                <h5 class="card-title">Dependencias</h5>
+                                <p class="card-text">Portal de Dependencias</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+
+                <!-- Portal de Empleados -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.php?action=empleados" class="text-decoration-none">
+                        <div class="card shadow-sm border-0">
+                            <div id="carouselEmpleados" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.oaxaca.gob.mx/comunicacion/wp-content/uploads/sites/28/2023/10/WhatsApp-Image-2023-10-17-at-5.04.35-PM-1024x683.jpeg" class="d-block w-100" alt="Empleado 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.oaxaca.gob.mx/comunicacion/wp-content/uploads/sites/28/2021/10/Personal-con-mas-de-20-anos-de-servicio-4.jpg" class="d-block w-100" alt="Empleado 2">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEmpleados" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselEmpleados" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2830/2830573.png" class="my-3" style="width: 60px;" alt="Icono Empleados">
+                                <h5 class="card-title">Empleados</h5>
+                                <p class="card-text">Portal de Empleados</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+
+                <!-- Portal de Mobiliario -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.php?action=mostrarMobiliarioAsignado" class="text-decoration-none">
+                        <div class="card shadow-sm border-0">
+                            <div id="carouselMobiliario" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.oaxaca.gob.mx/comunicacion/wp-content/uploads/sites/28/2022/11/IEEPO-1-2.jpeg" class="d-block w-100" alt="Mobiliario 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.oaxaca.gob.mx/ieepo/wp-content/uploads/sites/75/2024/02/02-02-24-c.jpg" class="d-block w-100" alt="Mobiliario 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://www.oaxaca.gob.mx/ieepo/wp-content/uploads/sites/75/2021/06/29-06-21-5.jpeg" class="d-block w-100" alt="Mobiliario 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobiliario" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselMobiliario" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/989/989574.png" class="my-3" style="width: 60px;" alt="Icono Mobiliario">
+                                <h5 class="card-title">Mobiliario</h5>
+                                <p class="card-text">Portal de Mobiliario</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-light">
+        <!-- Sección superior con fondo burdeos y decorado -->
+        <div class="bg-burdeo py-3">
+                <a href="#" class="text-burdeo me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-burdeo"><i class="bi bi-twitter"></i></a>
+            
+        </div>
+        
+        <!-- Sección de contenido principal -->
+        <div class="container py-4">
+            <div class="row text-center text-md-start">
+                <!-- Columna de contacto -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="https://seeklogo.com/images/O/oaxaca-gobierno-del-estado-logo-D127C58E05-seeklogo.com.png" alt="Logo Oaxaca" width="120" class="mb-3">
+                    <h5 class="fw-bold text-burdeo">CONTACTO</h5>
+                    <p class="small mb-1">Ciudad Administrativa, Edificio, Nivel, Carretera Oaxaca-Istmo Km. 11.5 Tlalixtac de Cabrera Oaxaca.</p>
+                    <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i>(951) 5015000, CP: 68270.</p>
+                    <p class="small"><i class="bi bi-globe me-2"></i><a href="https://www.oaxaca.gob.mx" class="text-decoration-none text-burdeo">www.oaxaca.gob.mx</a></p>
+                    <div>
+                        <a href="#" class="text-burdeo me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-burdeo"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Columna de atención ciudadana -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-burdeo">ATENCIÓN CIUDADANA</h5>
+                    <p class="small mb-1">Ciudad Administrativa</p>
+                    <p class="small mb-1">Tel. (951) 5015000 Ext. 11408 y 11411</p>
+                    <p class="small mb-1">Palacio de Gobierno</p>
+                    <p class="small">Tel. (951) 5018100 Ext. 40033</p>
+                    <br><br><br>
+                    <p class="small mb-1">CREADO POR:</p>
+                    <p class="small mb-1">Jorge Eli Vera Lazaro</p>
+                    <p class="small">Ismael Morales Diaz</p>
+                    <p class="small">Zianya Tayde Joffre Gonzales</p>
+                </div>
+
+                
+                <!-- Columna de emergencias -->
+                <div class="col-md-4">
+                    <img src="https://www.oaxaca.gob.mx/comunicacion/wp-content/uploads/sites/28/2021/11/089-1.png" alt="089 Denuncia Anónima" class="emergency-banner mb-3 d-block mx-auto">
+                    <img src="https://www.oaxaca.gob.mx/wp-content/themes/temaoax2024/assets/images/911.png" alt="911 Emergencias" class="d-block mx-auto">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
